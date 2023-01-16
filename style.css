@@ -1,0 +1,63 @@
+*{
+    text-align: center;
+    /*word-break: keep-all;*/
+    /*white-space: pre-wrap;*/
+}
+
+.body-content{
+    width: 540px;
+    height: 690px;
+    background-color: #eddfee;
+    margin: auto;
+    padding: 1%;
+}
+.upper-content{
+    width: 180px;
+    height: 70px;
+    background-color: #9c35dc;
+    font-size: 32px;
+    margin: 30px auto;
+    line-height: 70px;
+}
+
+.main-content{
+    width: 500px;
+    height: 100px;
+    background-color: #a374db;
+    margin: 400px auto;
+    line-height: 100px;
+    font-size: 50px;
+}
+
+.question{
+    width: 300px;
+    height: 100px;
+    margin: 10px auto;
+    line-height: 200%;
+    padding: 1%;
+    border: 2px solid black;
+}
+
+.result{
+    width: 300px;
+    height: 100px;
+    margin: 50px auto;
+    background-color: pink;
+    line-height: 100px;
+}
+
+.relation1{
+    float: left;
+    width: 100px;
+    height: 200px;
+    line-height: 100px;
+    margin-left: 100px;
+}
+
+.relation2{
+    float: right;
+    width: 100px;
+    height: 200px;
+    line-height: 100px;
+    margin-right: 100px;
+}
