@@ -4,7 +4,7 @@
     /*white-space: pre-wrap;*/
 }
 
-.bodycontent{
+.body-content{
     width: 540px;
     height: 690px;
     background-color: #eddfee;
@@ -24,7 +24,7 @@
     width: 500px;
     height: 100px;
     background-color: #a374db;
-    margin: 400px auto;
+    margin: 325px, auto, auto, 400px;
     line-height: 100px;
     font-size: 50px;
 }
