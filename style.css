@@ -14,6 +14,7 @@ i{
     width: 540px;
     height: 690px;
     margin: auto;
+    background-color: aliceblue;
     padding-top: 30px;
 }
 
@@ -56,11 +57,14 @@ i{
 }
 
 .result{
-    width: 300px;
-    height: 100px;
-    margin: 50px auto;
+    width: 120px;
+    height: 30px;
+    margin: auto;
     background-color: pink;
-    line-height: 100px;
+    line-height: 30px;
+    color: white;
+    font-size: large;
+    margin-bottom: 30px;
 }
 
 .relation1{
@@ -68,7 +72,8 @@ i{
     width: 100px;
     height: 60px;
     line-height: 30px;
-    margin-left: 100px;
+    margin-left: 90px;
+    color: white;
 }
 
 .relation2{
@@ -76,5 +81,10 @@ i{
     width: 100px;
     height: 60px;
     line-height: 30px;
-    margin-right: 100px;
+    margin-right: 90px;
+    color: white;
+}
+
+.explanation{
+    margin-bottom: 50px;
 }

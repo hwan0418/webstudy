@@ -27,33 +27,36 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <style>
-            .relation1 {background-color: khaki;}
-            .relation2 {background-color: brown;}
-
+            .container {background-color: rgb(231, 231, 231); padding-top: 30px;}
+            .relation1 {background-color: rgb(4, 158, 158);}
+            .relation2 {background-color: rgb(171, 71, 28);}
+            .result {background-color: rgb(38, 38, 117);}
         </style>
     </head>
     <body>
-        <div class="container" style="background-color: rgb(231, 231, 231); padding-top: 30px;">결과는...
-            <div class = "result-body" style="padding-top: 30px;">
-                <p><span>스마일 연애 테스트</span></p>
-                <p><span style="font-size: x-small;">케이테스트</span></p>
-                <p><span style="margin-top: 300px;">배려심 넘치는 해바라기</span></p>
-                <div class = "result">핑크 스마일</div>
-                <i class="fa-solid fa-face-laugh"></i>
-                <div class = "explanation">
-                    <p>연애를 신중하게 하는 편. <br>
-                    썸 일 때는 선을 지키며 다가오는 것이 중요함. <br>
-                    성격이 좋고, 다정해서 주변에 친구들이 많음. <br>
-                    소개팅 보다는 지인에서 연인으로 발전되는 경우가 많음. <br>
-                    눈치 백단이라 상대방에 가분을 잘 알아채고 공감해줌. <br>
-                    표현이든 선물이든 내가 베푼 만큼 돌려받고 싶음. <br>
-                    나에게 표현을 아끼지 않고 많이 해주면 관계에 안정감을 느낌. <br>
-                    연인이 예의 없는 모습을 보이면 실망함. <br>
-                    연인과의 갈등상황을 극도로 싫어함. <br>
-                    거짓말 하는 것은 더 싫어함.</p>
+        <script type="text/javascript" src="test.js"></script>
+        <div class="container">결과는...
+            <div class = "result-body" style="padding-top: 25px;">
+                <p style="margin-bottom: 5px"><span>스마일 연애 테스트</span></p>
+                <p style="margin-bottom: 30px"><span style="font-size: x-small;">케이테스트</span></p>
+                <p><span id ="typeintro" style="margin-top: 100px; font-size: large;">배려 넘치는 해바라기</span></p>
+                <div id = "type" class = "result">네이비 스마일</div>
+                <i class="fa-solid fa-face-laugh" style="margin-bottom: 50px"></i>
+                <div id = "explanation" class = "explanation">
+                    <p>눈치가 빨라 연인의 감정에 잘 맞춰 줌.<br>
+                    차분하고, 서로 배려하는 연애를 원함.<br>
+                    내 사적인 일상에 지장이 없는 계획적인 데이트를 원함.<br>
+                    독립심이 강하고, 내 힘든 일은 연인에게 이야기 잘 안함.<br>
+                    힘든 일을 나누면 힘든 사람이 두 명이 된다 생각함.<br>
+                    인정 받는 것 좋아해서, 연인이 칭찬 많이 해주면 감동함.<br>
+                    은근 사소한 것 쉽게 감동함. 티는 잘 안 날 수도 있음.<br>
+                    연인과 싸우면 억울한게 많다 생각해 뒤 끝 있는 편임.<br>
+                    연인이 약속을 안지키면 많이 실망함.</p>
                 </div>
-                <div class = "relation1">그레이 스마일 베이지 스마일</div>
-                <div class = "relation2">스카이 스마일 브라운 스마일</div>
+                <p><span style="float: left; margin-left: 100px; color:rgb(4, 158, 158)">함께하면 좋음</span>
+                    <span style="float: right; margin-right: 100px; color: rgb(171, 71, 28);">함께하면 힘듦</span></p>
+                <div id = "relation1" class = "relation1">그레이 스마일 베이지 스마일</div>
+                <div id = "relation2"class = "relation2">스카이 스마일 브라운 스마일</div>
             </div>
         </div>
     </body>
