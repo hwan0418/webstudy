@@ -5,11 +5,6 @@
     font-family: 'Gowun Dodum', sans-serif;
 }
 
-i{
-    font-size: 10rem;
-    color: #612586;
-}
-
 .body-content{
     width: 540px;
     height: 690px;
@@ -20,7 +15,7 @@ i{
 
 .result-body{
     width: 400px;
-    height: 700px;
+    height: 650px;
     margin: auto;
     margin-top: 10px;
     padding-top: 27px;
@@ -97,23 +92,27 @@ i{
 .relation1{
     float: left;
     width: 100px;
-    height: 60px;
-    line-height: 30px;
+    height: 50px;
+    line-height: 25px;
     margin-left: 90px;
     color: white;
     background-color: rgb(4, 158, 158);
+    font-size: 11px;
 }
 
 .relation2{
     float: right;
     width: 100px;
-    height: 60px;
-    line-height: 30px;
+    height: 50px;
+    line-height: 25px;
     margin-right: 90px;
     color: white;
     background-color: rgb(171, 71, 28);
+    font-size: 11px;
 }
 
 .explanation{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    line-height: 25px;
 }
