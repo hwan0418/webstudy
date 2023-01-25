@@ -149,6 +149,10 @@ $(document).ready(function(){
         location.href = 'question.html';
     });
 
+    $('#restart').click(function() {
+        location.href = 'question.html';
+    });
+
     $('#1').on("click",function(){
         if ((count >= 1) && (count <= 3)) ei += 1;
         else if ((count >= 4) && (count <= 6)) sn += 1;
