@@ -149,6 +149,10 @@ $(document).ready(function(){
         location.href = 'question.html';
     });
 
+    $('#starteng').click(function() {
+        location.href = 'questioneng.html';
+    });
+
     $('#restart').click(function() {
         location.href = 'question.html';
     });
