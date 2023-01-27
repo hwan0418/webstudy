@@ -1,6 +1,6 @@
 var count = 0;
 var ei = 0;
-var sn = 0;
+var ns = 0;
 var tf = 0;
 var jp = 0;
 var mbti = 0;
@@ -18,7 +18,7 @@ var questions = ['갑자기 예정에 없던 약속이 생기면 나는?',
     '연인과 여행을 가기로 했을 때 나는?']
 
     var choices1 = ['재밌겠다!  별일 없으면 약속에 간다.',
-    '사람들이 먼저 말을 걸어올 때까지 기다려본다.',
+    '먼저 주도적으로 말을 걸고, 분위기를 업시키려고 노력한다.',
     '아 빨리 도착했으면 좋겠다.',
     '점심 먹으면서 저녁 뭐 먹을지 고민',
     '와.. 저 가사는 저 사람이 겪은 이야기인가? 연습은 얼마나 했을까?',
@@ -30,7 +30,7 @@ var questions = ['갑자기 예정에 없던 약속이 생기면 나는?',
     '일별로 계획을 세세하게 미리 정해놓는다.',]
 
     var choices2 = ['내 계획에 없던 건데.핑계를 댄다.',
-    '먼저 주도적으로 말을 걸고, 분위기를 업시키려고 노력한다.',
+    '사람들이 먼저 말을 걸어올 때까지 기다려본다.',
     '재밌겠다! 근데 비행기는 무슨 원리로 뜨는 거지?',
     '들어간 식당 최애음식 두 메뉴 중 뭐 먹을지 고민',
     '와~ 찢었다 이거 음원 나오면 맨날 들을거야ㅠ',
@@ -159,7 +159,7 @@ $(document).ready(function(){
 
     $('#1').on("click",function(){
         if ((count >= 1) && (count <= 3)) ei += 1;
-        else if ((count >= 4) && (count <= 6)) sn += 1;
+        else if ((count >= 4) && (count <= 6)) ns += 1;
         else if ((count >= 7) && (count <= 9)) tf += 1;
         else if ((count >= 10) && (count <= 12)) jp += 1;
         $('#body').text(questions[count]);
@@ -168,7 +168,7 @@ $(document).ready(function(){
         count++;
         if (count == 13){
             window.localStorage.setItem('ei', ei);
-            window.localStorage.setItem('sn', sn);
+            window.localStorage.setItem('ns', ns);
             window.localStorage.setItem('tf', tf);
             window.localStorage.setItem('jp', jp);
             location.href = 'result.html';
@@ -177,7 +177,7 @@ $(document).ready(function(){
 
     $('#2').on("click", function(){
         if ((count >= 1) && (count <= 3)) ei -= 1;
-        else if ((count >= 4) && (count <= 6)) sn -= 1;
+        else if ((count >= 4) && (count <= 6)) ns -= 1;
         else if ((count >= 7) && (count <= 9)) tf -= 1;
         else if ((count >= 10) && (count <= 12)) jp -= 1;
         $('#body').text(questions[count]);
@@ -187,7 +187,7 @@ $(document).ready(function(){
 
         if (count == 13){
             window.localStorage.setItem('ei', ei);
-            window.localStorage.setItem('sn', sn);
+            window.localStorage.setItem('ns', ns);
             window.localStorage.setItem('tf', tf);
             window.localStorage.setItem('jp', jp);
             location.href = 'result.html';
@@ -195,54 +195,55 @@ $(document).ready(function(){
     }); 
 
     ei = window.localStorage.getItem("ei");
-    sn = window.localStorage.getItem("sn");
+    ns = window.localStorage.getItem("ns");
     tf = window.localStorage.getItem("tf");
     jp = window.localStorage.getItem("jp");
     if (ei>0){
-        if (sn>0){
+        if (ns>0){
             if (tf>0){
-                if(jp>0) mbti = 0;
-                else mbti = 1;
+                if(jp>0) mbti = 3;
+                else mbti = 2;
             }
             else{
-                if(jp>0) mbti = 2;
-                else mbti = 3;
+                if(jp>0) mbti = 1;
+                else mbti = 0;
             }
         }
         else{
             if (tf>0){
-                if(jp>0) mbti = 4;
-                else mbti = 5;
+                if(jp>0) mbti = 7;
+                else mbti = 6;
             }
             else{
-                if(jp>0) mbti = 6;
-                else mbti = 7;
+                if(jp>0) mbti = 5;
+                else mbti = 4;
             }
         }
     }
     else{
-        if (sn>0){
+        if (ns>0){
             if (tf>0){
-                if(jp>0) mbti = 8;
-                else mbti = 9;
+                if(jp>0) mbti = 11;
+                else mbti = 10;
             }
             else{
-                if(jp>0) mbti = 10;
-                else mbti = 11;
+                if(jp>0) mbti = 9;
+                else mbti = 8;
             }
         }
         else{
             if (tf>0){
-                if(jp>0) mbti = 12;
-                else mbti = 13;
+                if(jp>0) mbti = 15;
+                else mbti = 14;
             }
             else{
-                if(jp>0) mbti = 14;
-                else mbti = 15;
+                if(jp>0) mbti = 13;
+                else mbti = 12;
             }
         }
     }
     
+    // alert(ei+" "+ns+" "+tf+" "+jp);
     typeintrolist[mbti] = typeintrolist[mbti].replace(/(?:\r\n|\r|\n)/g, '<br />');
     $('#typeintro').html(typeintrolist[mbti]);
     typelist[mbti] = typelist[mbti].replace(/(?:\r\n|\r|\n)/g, '<br />');
