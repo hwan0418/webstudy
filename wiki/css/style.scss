@@ -1,0 +1,14 @@
+$color1: red;
+$color2: blue;
+
+.accordion{
+    &-button{
+        color: $color1;
+        &-active-color{
+            color: $color1;
+        }
+    }
+    &-icon-color{
+        color: $color1;
+    }
+}
